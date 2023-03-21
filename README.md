@@ -4,5 +4,8 @@ This repo contains my dotfiles.
 
 Configs in the repo:
 
-- .zshrc
-- starship.toml
+- zsh
+- starship
+- alacritty
+
+My neovim configuration can be found [here](https://github.com/liamwh/init.lua).
