@@ -1,12 +1,18 @@
 export PATH=$HOME/.cargo/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 
+path+=('/home/liam/.local/bin')
+path+=('/home/linuxbrew/.linuxbrew/bin')
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(
+ugins=(
     git
     macos
+    docker
+    zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 # Source ZSH
