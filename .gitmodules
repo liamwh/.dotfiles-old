@@ -1,0 +1,6 @@
+[submodule "init.lua"]
+	path = init.lua
+	url = https://github.com/liamwh/init.lua.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/liamwh/init.lua.git
