@@ -7,3 +7,6 @@
 [submodule "wezterm"]
 	path = wezterm
 	url = https://github.com/liamwh/wezterm
+[submodule "karabiner"]
+	path = karabiner
+	url = https://github.com/liamwh/karabiner.git
