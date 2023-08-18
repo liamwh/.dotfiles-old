@@ -5,6 +5,7 @@ This repo contains my dotfiles.
 Configs in the repo:
 
 - Neovim
+- WezTerm
 - zsh
 - starship
 - zellij
