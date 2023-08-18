@@ -6,4 +6,7 @@
 	url = https://github.com/liamwh/init.lua.git
 [submodule "wezterm"]
 	path = wezterm
-	url = https://github.com/liamwh/wezterm.git
+	url = https://github.com/liamwh/wezterm
+[submodule "karabiner"]
+	path = karabiner
+	url = https://github.com/liamwh/karabiner.git
