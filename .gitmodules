@@ -10,3 +10,6 @@
 [submodule "karabiner"]
 	path = karabiner
 	url = https://github.com/liamwh/karabiner.git
+[submodule "lazygit"]
+	path = lazygit
+	url = https://github.com/liamwh/lazygit.git
