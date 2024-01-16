@@ -51,5 +51,6 @@ alias vim="nvim"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(atuin init zsh)"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
