@@ -43,6 +43,7 @@ alias gcm="git checkout main"
 alias k="kubectl"
 alias ll="eza -la"
 alias vim="nvim"
+alias cat="bat -p"
 
 # Source Docker
 # source $HOME/.docker/init-zsh.sh || true # Added by Docker Desktop
