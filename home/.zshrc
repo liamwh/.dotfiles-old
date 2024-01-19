@@ -42,6 +42,7 @@ alias gcm="git checkout main"
 # Other aliases
 alias k="kubectl"
 alias ll="eza -la"
+alias t="terraform"
 alias vim="nvim"
 alias cat="bat -p"
 
