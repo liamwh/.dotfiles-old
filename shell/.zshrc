@@ -11,13 +11,16 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export PATH=$HOME/.cargo/bin:/usr/local/bin:$PATH
-export PATH="/usr/local/opt/libpq/bin:$PATH"
-
-path+=("/home/liam/.local/bin")
+# Add directories to PATH
+path+=("/usr/local/opt/libpq/bin")
+path+=("$HOME/.cargo/bin")
+path+=("/usr/local/bin")
+path+=("$HOME/.local/bin")
 path+=('/home/linuxbrew/.linuxbrew/bin')
 path+=("$HOME/go/bin")
-path+=("$HOME/go/bin")
+
+# Share a target dir for all cargo projects
+export CARGO_TARGET_DIR="$HOME/.cargo-target"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -41,15 +44,14 @@ alias gcm="git checkout main"
 
 # Other aliases
 alias k="kubectl"
+alias ka="kubectl apply -k ."
 alias ll="eza -la"
 alias t="terraform"
 alias vim="nvim"
+alias cd="z"
 alias cat="bat -p"
 
-# Source Docker
-# source $HOME/.docker/init-zsh.sh || true # Added by Docker Desktop
-
-#  Source fzf
+# Additonal Sourcing
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
