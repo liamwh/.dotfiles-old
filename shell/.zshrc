@@ -11,13 +11,21 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Add directories to PATH
-path+=("/usr/local/opt/libpq/bin")
-path+=("$HOME/.cargo/bin")
-path+=("/usr/local/bin")
-path+=("$HOME/.local/bin")
-path+=('/home/linuxbrew/.linuxbrew/bin')
-path+=("$HOME/go/bin")
+# Function to add a directory to PATH if it's not already in PATH
+add_to_path_if_not_exists() {
+    if [[ ":$PATH:" != *":$1:"* ]]; then
+        path+=("$1")
+    fi
+}
+
+# Adding paths conditionally
+add_to_path_if_not_exists "/usr/local/opt/libpq/bin"
+add_to_path_if_not_exists "/usr/local/bin"
+add_to_path_if_not_exists "/home/linuxbrew/.linuxbrew/bin"
+add_to_path_if_not_exists "$HOME/.local/bin"
+add_to_path_if_not_exists "$HOME/go/bin"
+add_to_path_if_not_exists "$HOME/.cargo/bin"
+add_to_path_if_not_exists "$HOME/.cargo/bin"
 
 # Share a target dir for all cargo projects
 export CARGO_TARGET_DIR="$HOME/.cargo-target"
@@ -43,6 +51,7 @@ alias gpo="git push origin"
 alias gcm="git checkout main"
 
 # Other aliases
+alias j="just"
 alias k="kubectl"
 alias ka="kubectl apply -k ."
 alias ll="eza -la"
