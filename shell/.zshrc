@@ -25,7 +25,7 @@ add_to_path_if_not_exists "/home/linuxbrew/.linuxbrew/bin"
 add_to_path_if_not_exists "$HOME/.local/bin"
 add_to_path_if_not_exists "$HOME/go/bin"
 add_to_path_if_not_exists "$HOME/.cargo/bin"
-add_to_path_if_not_exists "$HOME/.cargo/bin"
+add_to_path_if_not_exists "$HOME/.fly/bin"
 
 # Share a target dir for all cargo projects
 export CARGO_TARGET_DIR="$HOME/.cargo-target"
