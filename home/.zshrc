@@ -5,6 +5,8 @@ eval "$(starship init zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 path+=("/opt/homebrew/opt/mysql-client/bin:$PATH")
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
