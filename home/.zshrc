@@ -42,6 +42,8 @@ alias tm="tmux"
 alias tml="tmux list-sessions"
 alias tma="tmux attach-session"
 alias tmat="tmux attach-session -t"
+alias tmks="tmux kill-session -t"
+alias tmn="tmux new-session"
 
 #  Source fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
