@@ -1,0 +1,21 @@
+[user]
+	name = Liam Woodleigh-Hardinge
+	email = liam.woodleigh@gmail.com
+[ui "color"]
+	ui = always
+[color]
+	ui = true
+[push]
+	autoSetupRebase = always
+	default = current
+[pull]
+	ff = only
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+	safecrlf = true
+[help]
+	autocorrect = 1

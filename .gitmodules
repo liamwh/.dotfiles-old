@@ -1,0 +1,15 @@
+[submodule "init.lua"]
+	path = init.lua
+	url = https://github.com/liamwh/init.lua.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/liamwh/init.lua.git
+[submodule "wezterm"]
+	path = wezterm
+	url = https://github.com/liamwh/wezterm
+[submodule "karabiner"]
+	path = karabiner
+	url = https://github.com/liamwh/karabiner.git
+[submodule "lazygit"]
+	path = lazygit
+	url = https://github.com/liamwh/lazygit.git
